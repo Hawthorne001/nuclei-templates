@@ -13,7 +13,6 @@ info:
 
 http:
   - method: GET
-
     path:
       - "{{BaseURL}}/wp-content/plugins/table-of-contents-plus/readme.txt"
 
@@ -47,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022100861fd87b58f4a5d356ccfeb97dd926ff1552ef42bffeaf5ffeca0df3fa207ca4022035c6bd31cac4f4ec410744948b48a3cb77ad50aba0ab22f5aaa5943578d88374:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022021ff2fb50028cd1d296b1d730c38224980c8a214a17df468046946984569ca170220169b3832a8321244d76ce6929143092e69c325edf1f6cd942306d372f445a11d:922c64590222798bb761d5b6d8e72950

@@ -1,0 +1,32 @@
+id: metube-detect
+
+info:
+  name: MeTube Instance Detected
+  author: rxerium
+  severity: info
+  description: |
+    A MeTube instance was detected.
+  reference:
+    - https://github.com/alexta69/metube
+  metadata:
+    verified: true
+    shodan-query: http.title:MeTube
+    max-request: 1
+  tags: metube,detect,panel,login
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "<title>MeTube</title>"
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a004730450220732cc380a3c4ba522564c2dc36837be87c2558417b67690245f9d0bc64c34927022100cb47f731680092222c3e1fca8f7d4926d6d38af41ff48a289f1827ed03ed07f1:922c64590222798bb761d5b6d8e72950

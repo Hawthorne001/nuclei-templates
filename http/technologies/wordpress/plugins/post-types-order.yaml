@@ -9,11 +9,10 @@ info:
   metadata:
     plugin_namespace: post-types-order
     wpscan: https://wpscan.com/plugin/post-types-order
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-200
 
 http:
   - method: GET
-
     path:
       - "{{BaseURL}}/wp-content/plugins/post-types-order/readme.txt"
 
@@ -47,4 +46,3 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a0047304502206f9eea75b3d1348625aef5c40d7cf0e0c67ecd93dc7b8fa8e59836814d10cb89022100ad56b283f8493fc95b8716db7c19a7ff03e2c30d731e03cce4f13cb57ffa5b36:922c64590222798bb761d5b6d8e72950
